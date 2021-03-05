@@ -1,2 +1,3 @@
 # jsdict
-My project on university
+Our project on university on 2014
+Japanese-Vietnamese Dictionary
