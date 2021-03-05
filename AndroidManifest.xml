@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.team5b1.jsdict"
+    android:versionCode="4"
+    android:versionName="1.04" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_CLIPS" />
+    <uses-permission android:name="android.permission.READ_CLIPS" />
+    <uses-permission android:name="android.permission.WRITE_CLIPS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="radicalsearch.AedictApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="jsdictmain.ResultViewController"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+
+            <!-- Receives the search request. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <!-- Points to searchable meta data. -->
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="inputmethod.DrawKanjiViewController"
+            android:label="@string/kanjiLookup" >
+        </activity>
+        <activity
+            android:name="radicalsearch.KanjiAnalyzeActivity"
+            android:label="@string/kanjiAnalysisOf" />
+        <activity
+            android:name="radicalsearch.KanjiDetailActivity"
+            android:label="@string/kanjiDetail" />
+        <activity android:name="inputmethod.RadicalKanjiSearchViewController" >
+        </activity>
+        <activity android:name="vn.team5b1.jsdict.TopResultsActivity" >
+        </activity>
+        <activity
+            android:name="radicalsearch.KanjiPreferenceActivity"
+            android:label="@string/preferencestitle" >
+        </activity>
+        <!-- POPUP -->
+        <activity
+            android:name="inputmethod.ClipboardViewController"
+            android:label="@string/app_name" >
+        </activity>
+
+        <receiver android:name="vn.team5b1.jsdict.service.ClipboardMonitorStarter" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="instantpopup.ClipboardMonitor" >
+        </service>
+        <service android:name="instantpopup.TogglePopup" >
+        </service>
+
+        <receiver
+            android:name="vn.team5b1.jsdict.StartupReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <!-- Language -->
+        <activity android:name="jsdictmain.Languge" />
+
+        <provider
+            android:name="jsdictmain.DictionaryProvider"
+            android:authorities="jsdictmain.DictionaryProvider"
+            android:exported="true" />
+
+        <activity
+            android:name="options.SettingViewController"
+            android:label="@string/settings"
+            android:parentActivityName="jsdictmain.ResultViewController" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="jsdictmain.MainActivity" />
+        </activity>
+        <activity
+            android:name="mydict.MyDictUpdateViewController"
+            android:label="@string/update_form"
+            android:parentActivityName="jsdictmain.ResultViewController" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="jsdictmain.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="jsdictmain.Splash"
+            android:label="@string/title_activity_splash" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

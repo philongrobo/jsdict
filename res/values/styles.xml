@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+		 <item name="android:textColorPrimary">#000000</item>
+    	 <item name="android:textColorSecondary">#d0b188</item>
+        <!-- Support library compatibilit	y -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:backgroundStacked">@color/purple_pressed</item>
+        <item name="android:backgroundSplit">@color/purple_bg</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/actionbar_background</item>
+        <item name="backgroundStacked">@color/purple_pressed</item>
+        <item name="backgroundSplit">@color/purple_bg</item>
+    </style>
+	<style name="master" paret="@android:style/Theme.NoTitleBar">
+	    	<item name="android:textColorPrimary">#000000</item>
+    	 <item name="android:textColorSecondary">#d0b188</item>
+   		 <item name="android:textColorTertiary">#EEEEEE</item>
+</style></resources>

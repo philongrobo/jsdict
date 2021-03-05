@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>  
+  <com.actionbarsherlock.internal.widget.IcsSpinner xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/DictSelectSpinner"  
+    android:layout_width="42dp"  
+    android:layout_height="fill_parent" 
+    android:icon="@drawable/dict_select_dropdown"/>  

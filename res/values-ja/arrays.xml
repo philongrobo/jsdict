@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="kana">
+        <item>hiragana</item>
+        <item>katakana</item>
+    </string-array>
+    <string-array name="romanizations">
+        <item>Hepburn</item>
+        <item>Nihon-Shiki</item>
+    </string-array>
+    <!-- These values must match names of the RomanizationEnum constants -->
+    <string-array name="romanizations_enum">
+        <item>Hepburn</item>
+        <item>NihonShiki</item>
+    </string-array>
+    <string-array name="languageFrom">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+      <string-array name="languageTo">
+        <item>Tiếng Việt</item>
+        <item>日本語</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="kanjiSearchMethod">
+        <item>By radical</item>
+        <item>By drawing recognition</item>
+        <item>By layout (SKIP)</item>
+    </string-array>
+    <string-array name="matcher">
+        <item>Any matches</item>
+        <item>Exact matches</item>
+        <item>Starts with</item>
+        <item>Ends with</item>
+    </string-array>
+    <string-array name="notepadRestore">
+        <item>Overwrite</item>
+        <item>Merge</item>
+    </string-array>
+    <string-array name="examplesDict">
+        <item>Tanaka</item>
+        <item>Tatoeba</item>
+    </string-array>
+    <string-array name="languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <string-array name="languageValue">
+        <item>日本語 is selected</item>
+        <item>English is selected</item>
+        <item>Tiếng Việt is selected</item>
+    </string-array>
+    <string-array name="drawerMain">
+        <item>ホーム</item>
+        <item>瞬時検索</item>
+        <!-- <item>オンライン翻訳</item> -->
+        <item>歴史</item>
+        <item>お気に入り</item>
+        <item>今日の単語</item>
+        <item>私の辞書</item>
+        <item>設定</item>
+        <item>ヘルプ</item>
+        <item>概要</item>
+    </string-array>
+    <string-array name="language1_array">
+        <item>English</item>
+        <item>Tiếng Việt</item>
+        <item>日本語</item>
+    </string-array>
+    <!-- ViewPager Tab -->
+    <string-array name="viewpager_tab">
+        <item>歴史</item>
+        <item>お気に入り</item>
+        <item>今日の単語</item>
+    </string-array>
+
+</resources>

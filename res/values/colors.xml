@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_bg">#6d386f</color>
+    <color name="purple_pressed">#a052a3</color>
+    <color name="accent_green">#97e08f</color>
+    <color name="pressed">#CC97e08f</color>
+
+</resources>

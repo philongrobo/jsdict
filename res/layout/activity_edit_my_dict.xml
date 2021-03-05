@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/textview_background"
+    tools:context=".MyDictViewController" >
+
+    <RelativeLayout
+        android:id="@+id/text_field"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@android:color/transparent" >
+
+        <ImageView
+            android:id="@+id/imgMyDict"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/my_dict" />
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/save_btn" />    
+            
+        <Button
+            android:id="@+id/DeleteButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@id/SaveButton"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/discard" />    
+        
+    </RelativeLayout>
+	<LinearLayout
+        android:id="@+id/update_form"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/text_field"
+        android:orientation="vertical"       
+        android:divider="@color/purple_bg" >
+        <EditText
+		    android:id="@+id/word"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:inputType="textNoSuggestions" 
+            android:hint="@string/hint_word" />	    	
+            
+		<EditText
+		    android:id="@+id/meaning"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:inputType="textMultiLine" 		   
+			android:hint="@string/hint_mean" />   
+    </LinearLayout> 
+
+</RelativeLayout>

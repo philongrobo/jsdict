@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/textview_background"
+    tools:context=".TranslationViewController" >
+
+    <RelativeLayout
+        android:id="@+id/lang_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <Spinner
+	        android:id="@+id/language1_spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentLeft="true"/>
+	
+	    <Button
+	        android:id="@+id/btnConversion"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/conversion_btn" />
+	    
+	    <Spinner
+	        android:id="@+id/language2_spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+       
+    <EditText
+        android:id="@+id/edtLang1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/lang_select"
+        android:ems="10"
+        android:background="@layout/textlines"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>  
+
+    <Button
+        android:id="@+id/btnTrans"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLang1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/translate" />
+    
+    <EditText
+        android:id="@+id/edtLang2"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:background="@layout/textlines"
+        android:editable="false"
+        android:ems="10"
+        android:layout_below="@id/btnTrans"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

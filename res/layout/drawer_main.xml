@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/textview_background" >
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <ListView
+            android:id="@+id/listview_drawer"
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/side_menu_background"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+    </android.support.v4.widget.DrawerLayout>
+
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a15350a85bc6d03"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" />
+
+</RelativeLayout>

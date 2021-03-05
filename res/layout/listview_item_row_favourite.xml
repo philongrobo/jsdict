@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="65dp" >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:textColor="#6D386F"
+        android:textSize="18sp" 
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/favourite_remove_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:contentDescription="@+string/icon" 
+        android:scaleType="fitCenter" 
+        android:adjustViewBounds="true"
+        android:textOn=""
+        android:textOff=""
+        android:onClick="onToggleFavourite"/>
+
+</RelativeLayout>

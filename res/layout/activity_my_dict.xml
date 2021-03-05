@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/textview_background"
+    tools:context=".MyDictViewController" >
+
+    <RelativeLayout
+        android:id="@+id/text_field"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:divider="@android:color/transparent" >
+
+        <ImageView
+            android:id="@+id/imgMyDict"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/my_dict" />
+
+        <Button
+            android:id="@+id/imgAddNewButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/addnew_btn" />
+
+        <ListView
+            android:id="@+id/listViewMyDict"
+            android:layout_width="fill_parent"
+             android:focusableInTouchMode="false"
+			android:clickable="false"
+			android:focusable="false"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/imgMyDict" />
+    </RelativeLayout>
+
+</RelativeLayout>

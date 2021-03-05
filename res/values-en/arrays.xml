@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Aedict - an EDICT browser for Android
+ Copyright (C) 2007 Martin Vysny
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string-array name="kana">
+        <item>hiragana</item>
+        <item>katakana</item>
+    </string-array>
+    <string-array name="romanizations">
+        <item>Hepburn</item>
+        <item>Nihon-Shiki</item>
+    </string-array>
+    <!-- These values must match names of the RomanizationEnum constants -->
+    <string-array name="romanizations_enum">
+        <item>Hepburn</item>
+        <item>NihonShiki</item>
+    </string-array>
+    <string-array name="kanjiSearchMethod">
+        <item>By radical</item>
+        <item>By drawing recognition</item>
+        <item>By layout (SKIP)</item>
+    </string-array>
+    <string-array name="matcher">
+        <item>Any matches</item>
+        <item>Exact matches</item>
+        <item>Starts with</item>
+        <item>Ends with</item>
+    </string-array>
+    <string-array name="notepadRestore">
+        <item>Overwrite</item>
+        <item>Merge</item>
+    </string-array>
+    <string-array name="examplesDict">
+        <item>Tanaka</item>
+        <item>Tatoeba</item>
+    </string-array>
+     <string-array name="languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <string-array name="languageFrom">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+      <string-array name="languageTo">
+        <item>Tiếng Việt</item>
+        <item>日本語</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="languageValue">
+        <item>日本語 is selected</item>
+        <item>English is selected</item>
+        <item>Tiếng Việt is selected</item>
+    </string-array>
+    <string-array name="drawerMain">
+        <item>Home</item>
+        <item>Instant Lookup</item>
+<!--         <item> ONLINE Translation</item> -->
+        <item>History</item>
+        <item>Favourites</item>
+        <item>Word of the day</item>
+        <item>My Dictionary</item>
+        <item>Settings</item>
+        <item>Help</item>
+        <item>About</item>
+    </string-array>
+    <string-array name="language1_array">
+        <item>English</item>
+        <item>Tiếng Việt</item>
+        <item>日本語</item>
+    </string-array>
+
+</resources>

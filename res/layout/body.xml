@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/lang1_Popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/btnConversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/conversion_btn" />
+
+        <Spinner
+            android:id="@+id/lang2_Popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSearchPopup"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="@string/strSearch" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/txtViewResult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>

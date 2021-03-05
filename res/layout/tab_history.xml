@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Screen Design for History tab -->
+
+    <RelativeLayout
+        android:id="@+id/text_field"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listViewHistory"
+            android:layout_width="fill_parent"
+            android:focusableInTouchMode="false"
+			android:clickable="false"
+			android:focusable="false"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

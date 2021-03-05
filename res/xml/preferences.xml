@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/preference_modeDict" >
+        <!-- <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="JSDictPref"
+            android:summary="@string/always_available_summary"
+            android:title="@string/always_availableJSDict" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PersonalPref"
+            android:summary="@string/usePersonal_summary"
+            android:title="@string/usePersonal" />
+ -->
+
+        <PreferenceScreen
+            android:key="rateThisApp"
+            android:title="@string/rateApp"
+            >
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preference_Language" >
+        <ListPreference
+            android:entries="@array/languages"
+            android:entryValues="@array/languageValue"
+            android:key="checkForLanguage"
+            android:summary="@string/checkForUpdatesLanguage"
+            android:title="@string/checkForLanguage"
+            android:defaultValue="Tiếng Việt đang được lựa chọn"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

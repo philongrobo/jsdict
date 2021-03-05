@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/draw_btn"
+        android:layout_weight="1"
+        android:icon="@drawable/draw_btn"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/puzzle_btn"
+        android:layout_weight="1"
+        android:icon="@drawable/puzzle_btn"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/keyboard_btn"
+        android:layout_weight="1"
+        android:icon="@drawable/keyboard_btn"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/mic_btn"
+        android:layout_weight="1"
+        android:icon="@drawable/mic_btn"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/cam_btn"
+        android:layout_weight="1"
+        android:icon="@drawable/translate_btn"
+        android:showAsAction="always"/>
+
+</menu>

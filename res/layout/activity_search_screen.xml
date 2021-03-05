@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/textview_background"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/webViewResult"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/btnSpeak"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="71dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/speak_btn"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/add"
+        android:scaleType="fitCenter" />
+
+    <ToggleButton
+        android:id="@+id/btnFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/favourite_not_add"
+        android:scaleType="fitCenter"
+        android:textOff=""
+        android:textOn="" />
+
+   <!--  <Button
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/speak_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Speak" /> -->
+
+</RelativeLayout>

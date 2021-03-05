@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="nav_list">
+        <item>jv</item>
+        <item>vj</item>
+        <item>kj</item>
+    </string-array>
+</resources>

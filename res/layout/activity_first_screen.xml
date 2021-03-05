@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/textview_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/wordOfTheDay"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:background="@drawable/wod_stickynote"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/imgAddToMyDict"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/add2" />
+
+        <ImageButton
+            android:id="@+id/imgAddToFavourite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/favourite_not_add" />
+
+        <WebView
+            android:id="@+id/WoD_webView"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="110dp"
+            android:background="@android:color/transparent" >
+        </WebView>
+    </RelativeLayout>
+
+</RelativeLayout>
